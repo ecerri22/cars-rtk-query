@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "name": "Test",
+      "surname": "Test",
+      "email": "user@test",
+      "password": "test123",
+      "id": 6
+    }
+  ],
+  "cars": [
+    {
+      "name": "Toyota Camry",
+      "userId": 6,
+      "cost": 24970,
+      "id": 1
+    },
+    {
+      "name": "Honda Civic",
+      "userId": 6,
+      "cost": 21250,
+      "id": 2
+    },
+    {
+      "name": "Ford Mustang",
+      "userId": 6,
+      "cost": 27155,
+      "id": 3
+    }
+  ],
+  "clients": [
+    {
+      "name": "Emily Johnson",
+      "phone": "000-000",
+      "address": " 123 Willow Street, Pleasantville, CA 90210",
+      "userId": 6,
+      "id": 9
+    },
+    {
+      "name": "Michael Patel",
+      "phone": "000-001",
+      "address": " 567 Maple Avenue, Springfield, IL 62701",
+      "userId": 6,
+      "id": 10
+    },
+    {
+      "name": "Sarah Davis",
+      "phone": "000-002",
+      "address": "789 Oak Lane, Rivertown, NY 10980",
+      "userId": 6,
+      "id": 11
+    }
+  ]
+}
