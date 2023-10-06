@@ -8,6 +8,9 @@ const usersApi = createApi({
     endpoints(builder) {
         return {
             fetchUsers: builder.query({
+                providesTags: (results, error, user) => {
+                    return [{type: "User", user}]
+                },
                 query: () => {
                     return {
                         method: "GET",
@@ -17,6 +20,9 @@ const usersApi = createApi({
             }),
 
             addUser: builder.mutation({
+                invalidatesTags: (results, error, user) => {
+                    return [{type: "User", user}]
+                },
                 query: (user) => {
                     return {
                         method: "POST",
